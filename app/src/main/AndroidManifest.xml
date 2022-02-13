@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OldAgeManagmentSystem">
         <activity
+            android:name=".ManageData"
+            android:exported="false" />
+        <activity
+            android:name=".Records_Activity_Main"
+            android:exported="false"
+            android:parentActivityName=".MainDasboard" />
+        <activity
             android:name=".MainDasboard"
             android:exported="false" />
         <activity

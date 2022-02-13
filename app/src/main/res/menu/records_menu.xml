@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/search_the_item"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+
+    </item>
+
+    <item
+        android:title="Filter By: "
+        android:id="@+id/filt_icon"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/age_heading"
+                android:title="Sort By Age"
+                android:icon="@drawable/male_glasses_afro_american_hair_style">
+
+                <menu>
+
+                    <item
+                        android:id="@+id/fitosi"
+                        android:title="Age 50 to 60"/>
+
+                    <item
+                        android:id="@+id/sitosev"
+                        android:title="Age 60 to 70"/>
+
+                    <item
+                        android:id="@+id/eighttonice"
+                        android:title="Age 80 to 90"/>
+
+                    <item
+                        android:id="@+id/ninetohun"
+                        android:title="Age 90 to 100"/>
+
+                </menu>
+
+            </item>
+
+        <item
+            android:id="@+id/diseased"
+            android:title="@string/health_condition"
+            android:icon="@drawable/medical_healthcare_injury">
+
+            <menu>
+
+                <item
+                    android:id="@+id/not_healthy"
+                    android:title="@string/unhealthy_diseased"/>
+
+                <item
+                    android:id="@+id/healthy"
+                    android:title="@string/healthy">
+
+                </item>
+
+                <item
+                    android:id="@+id/bed_w"
+                    android:title="@string/bed_written">
+
+                </item>
+
+            </menu>
+
+
+
+        </item>
+
+
+<item android:id="@+id/lit_rate"
+    android:title="Literacy"
+    android:icon="@drawable/learning_head_book_education">
+
+    <menu>
+
+            <item
+                android:id="@+id/lit"
+                android:title="@string/literate">
+
+            </item>
+
+            <item
+                android:id="@+id/ilit"
+                android:title="@string/illeterate">
+
+            </item>
+
+    </menu>
+</item>
+
+            <item
+                android:id="@+id/show_pension"
+                android:title="@string/pensionwise"
+                android:icon="@drawable/hand_money_cash_hold">
+
+                <menu>
+
+                    <item
+                        android:id="@+id/pension"
+                        android:title="@string/pension">
+
+                    </item>
+
+                    <item
+                        android:id="@+id/depp"
+                        android:title="@string/dependant">
+
+                    </item>
+
+                </menu>
+
+            </item>
+
+
+            <item
+                android:id="@+id/relig"
+                android:title="@string/religion"
+                android:icon="@drawable/happy">
+
+                <menu>
+
+                    <item
+                        android:id="@+id/hind"
+                        android:title="@string/hindu">
+
+                    </item>
+
+                    <item
+                        android:id="@+id/isl"
+                        android:title="@string/islam">
+
+                    </item>
+
+                    <item
+                        android:id="@+id/christ"
+                        android:title="@string/christian">
+
+                    </item>
+                    <item
+                        android:id="@+id/sikh"
+                        android:title="@string/sikhism">
+
+                    </item>
+
+                    <item
+                    android:id="@+id/bud"
+                    android:title="@string/buddhism">
+
+                </item>
+                    <item
+                        android:id="@+id/trib"
+                        android:title="@string/tribal">
+
+                    </item>
+
+                    <item
+                    android:id="@+id/jain"
+                    android:title="@string/jaininsm">
+
+                </item>
+
+                    <item
+                        android:id="@+id/irr"
+                        android:title="@string/irreligion">
+
+                    </item>
+
+                    <item
+                        android:id="@+id/others"
+                        android:title="@string/others">
+
+                    </item>
+
+
+
+                </menu>
+
+            </item>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

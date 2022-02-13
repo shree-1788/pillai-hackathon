@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "61465879806",
+    "project_id": "oldagemanagmentsystem",
+    "storage_bucket": "oldagemanagmentsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61465879806:android:c696173dc1941ede6731af",
+        "android_client_info": {
+          "package_name": "com.example.oldagemanagmentsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61465879806-depaj1v6fmn87jgc3od9rqp60553a6o4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oldagemanagmentsystem",
+            "certificate_hash": "79ba48c1b6e0a15ea0245bc3ce977af8479cbe91"
+          }
+        },
+        {
+          "client_id": "61465879806-ag1cf4l7r99u6h35e7p4kt80j9gk719o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwGuMc1Y9Csi0yxkAHLYnWl4A9_RBSwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61465879806-ag1cf4l7r99u6h35e7p4kt80j9gk719o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

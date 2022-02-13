@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e){
                     e.printStackTrace();
                 } finally {
-                    Intent intent = new Intent(MainActivity.this, Intro_Activity.class);
+                    Intent intent = new Intent(MainActivity.this, MainDasboard.class);
                     startActivity(intent);
                     finish();
                 }

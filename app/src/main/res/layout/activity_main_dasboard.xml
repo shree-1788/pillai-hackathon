@@ -50,16 +50,19 @@
         <TextView
             android:id="@+id/logout_admin"
             android:layout_width="0dp"
-            android:layout_marginTop="75sp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
             android:text="Logout Here"
             android:textColor="@color/design_default_color_primary"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -89,6 +92,7 @@
                 android:layout_weight="1">
                 <RelativeLayout
                     android:layout_width="match_parent"
+                    android:id="@+id/records_tab"
                     android:layout_height="match_parent">
 
                     <TextView
@@ -127,7 +131,7 @@
                         android:layout_below="@id/imageView3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Manage Users"
+                        android:text="Manage Data"
                         android:textSize="18sp" />
 
                     <ImageView

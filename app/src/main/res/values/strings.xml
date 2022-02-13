@@ -17,4 +17,29 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="go_back_to_login">Go Back to Login</string>
     <string name="forgot_password">Forgot Password</string>
+    <string name="diseased">Diseased</string>
+    <string name="healthy">Healthy</string>
+    <string name="bed_written">Bed Written</string>
+    <string name="literate">Literate</string>
+    <string name="illeterate">Illeterate</string>
+    <string name="records_section">Records Section</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="unhealthy_diseased">Unhealthy/Diseased</string>
+    <string name="health_condition">Health Condition</string>
+    <string name="pensionwise">Pensionwise</string>
+    <string name="pension">Pension</string>
+    <string name="dependant">Dependant</string>
+    <string name="religion">Religion</string>
+    <string name="hindu">Hindu</string>
+    <string name="islam">Islam</string>
+    <string name="christian">Christian</string>
+    <string name="sikhism">Sikhism</string>
+    <string name="buddhism">Buddhism</string>
+    <string name="tribal">Tribal</string>
+    <string name="jaininsm">Jaininsm</string>
+    <string name="irreligion">Irreligion</string>
+    <string name="others">Others</string>
 </resources>
