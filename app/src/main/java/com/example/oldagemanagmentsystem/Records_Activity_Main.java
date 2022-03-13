@@ -38,21 +38,21 @@ public class Records_Activity_Main extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Male_Fragment()).commit();
 
-        db=FirebaseFirestore.getInstance();
+//        db=FirebaseFirestore.getInstance();
 
 
-        imageButton=(ImageButton)findViewById(R.id.GoBackButton);
+//        imageButton=(ImageButton)findViewById(R.id.GoBackButton);
+//
+//        imageButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getApplicationContext(),MainDasboard.class));
+//            }
+//        });
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainDasboard.class));
-            }
-        });
-
-        toolbar=findViewById(R.id.toolbar_records);
-        toolbar.setTitle("Welcome To Records");
-        setSupportActionBar(toolbar);
+//        toolbar=findViewById(R.id.toolbar_records);
+//        toolbar.setTitle("Welcome To Records");
+//        setSupportActionBar(toolbar);
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
@@ -65,12 +65,12 @@ public class Records_Activity_Main extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.records_menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//
+//        getMenuInflater().inflate(R.menu.records_menu,menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -94,30 +94,30 @@ public class Records_Activity_Main extends AppCompatActivity {
                 }
             };
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if (item.getItemId()==R.id.healthy){
-
-           Toast.makeText(this, "You selected Healthy", Toast.LENGTH_SHORT).show();
-            db.collection("Filter")
-                    .document("Filter Selected")
-                    .update("Selection","Healthy");
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
-        }
-        if (item.getItemId()==R.id.lit){
-
-            Toast.makeText(this, "You selected Literate", Toast.LENGTH_SHORT).show();
-            db.collection("Filter")
-                    .document("Filter Selected")
-                    .update("Selection","Literate");
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//
+//        if (item.getItemId()==R.id.healthy){
+//
+//           Toast.makeText(this, "You selected Healthy", Toast.LENGTH_SHORT).show();
+//            db.collection("Filter")
+//                    .document("Filter Selected")
+//                    .update("Selection","Healthy");
+//            Intent intent = getIntent();
+//            finish();
+//            startActivity(intent);
+//        }
+//        if (item.getItemId()==R.id.lit){
+//
+//            Toast.makeText(this, "You selected Literate", Toast.LENGTH_SHORT).show();
+//            db.collection("Filter")
+//                    .document("Filter Selected")
+//                    .update("Selection","Literate");
+//            Intent intent = getIntent();
+//            finish();
+//            startActivity(intent);
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

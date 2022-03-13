@@ -7,69 +7,28 @@
     tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            app:title="Admin Dashboard"
+            app:titleMarginStart="120dp"
+            app:titleTextColor="@color/grey"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#00008577"
+            android:background="@color/navy_blue"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
-            android:text="Hello Admin!"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-        <TextView
-            android:id="@+id/disp_full_name_mainsc"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="Admin Dashboard"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <TextView
-            android:id="@+id/logout_admin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="48dp"
-            android:text="Logout Here"
-            android:textColor="@color/design_default_color_primary"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0" />
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="100dp"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
@@ -84,9 +43,11 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/user_record"
                 android:layout_width="0dp"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
@@ -117,6 +78,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/ManageEventShow"
                 android:layout_width="0dp"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
@@ -158,6 +120,7 @@
                 android:id="@+id/Suggestions"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
                 <RelativeLayout
@@ -187,6 +150,7 @@
                 android:id="@+id/notices"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
                 <RelativeLayout
@@ -218,6 +182,7 @@
             android:layout_height="175dp"
             android:orientation="horizontal"
             android:padding="10dp"
+            android:id="@+id/last_sect"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -226,6 +191,7 @@
                 android:id="@+id/bookings"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_margin="10dp"
                 android:layout_weight="1">
                 <RelativeLayout
@@ -256,6 +222,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:backgroundTint="@color/browser_actions_bg_grey"
                 android:layout_weight="1">
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -281,5 +248,22 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/this_is_final"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/last_sect"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/log_out_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout">
+            </Button>
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

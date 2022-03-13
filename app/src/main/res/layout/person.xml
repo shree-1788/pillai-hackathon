@@ -95,6 +95,7 @@
 
         <ImageView
             android:id="@+id/person_pic"
+            android:contentDescription="@string/error"
             android:layout_width="96dp"
             android:layout_height="109dp"
             app:layout_constraintBottom_toBottomOf="parent"

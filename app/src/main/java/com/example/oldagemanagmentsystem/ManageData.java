@@ -93,7 +93,7 @@ public class ManageData extends AppCompatActivity {
                                             user.put("Name", name);
                                             user.put("Pension", pension);
                                             user.put("Religion", religion);
-                                            user.put("imageUrl",img_url);
+                                            user.put("Image",img_url);
                                             //user.put("userType",spin_val);
                                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                 @Override
@@ -142,7 +142,7 @@ public class ManageData extends AppCompatActivity {
             Toast.makeText(ManageData.this, "PLS UPLOAD AN IMAGE", Toast.LENGTH_SHORT).show();
         }
 
-        final StorageReference reference=storageReference.child("image_files/"+System.currentTimeMillis()+".jpeg");
+        final StorageReference reference=storageReference.child("Profile Pics").child("Male/"+name+System.currentTimeMillis()+".jpeg");
         reference.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -150,9 +150,9 @@ public class ManageData extends AppCompatActivity {
                     @Override
                     public void onSuccess(Uri uri) {
 
-                        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(fAuth.getCurrentUser().getUid());
+                        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("Male Users").document(uniqueId);
                         Map<String,Object> user= new HashMap<>();
-                        user.put("imageUrl",uri.toString());
+                        user.put("Image",uri.toString());
                         documentReference.update(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

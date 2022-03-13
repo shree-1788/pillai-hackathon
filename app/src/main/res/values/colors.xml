@@ -13,4 +13,13 @@
     <color name="colorPrimaryDark">#76a5df</color>
     <color name="colorAccent">#ffff8800</color>
     <color name="zircon">#e0e6e4</color>
+
+
+    <color name="grey">#DDE4EC</color>
+    <color name="charcoal">#1D1F21</color>
+
+    <color name="baby_blue">#BFD7ED</color>
+    <color name="blue_grotto">#60A3D9</color>
+    <color name="royal_blue">#0074B7</color>
+    <color name="navy_blue">#003B73</color>
 </resources>
