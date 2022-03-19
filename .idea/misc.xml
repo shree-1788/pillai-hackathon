@@ -7,14 +7,14 @@
         <entry key="app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.132" />
         <entry key="app/src/main/res/drawable/round_background.xml" value="0.3509259259259259" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login_dashboard.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login_dashboard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12" />
         <entry key="app/src/main/res/layout/activity_main_dasboard.xml" value="0.3477272727272727" />
         <entry key="app/src/main/res/layout/activity_manage_data.xml" value="0.31145833333333334" />
         <entry key="app/src/main/res/layout/activity_records_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_workshop_section.xml" value="0.22644927536231885" />
         <entry key="app/src/main/res/layout/fragment_female.xml" value="0.213768115942029" />
-        <entry key="app/src/main/res/layout/fragment_male_.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_male_.xml" value="0.1" />
         <entry key="app/src/main/res/layout/logout_confirm.xml" value="0.3072289156626506" />
         <entry key="app/src/main/res/layout/person.xml" value="0.33" />
         <entry key="app/src/main/res/layout/screen.xml" value="0.36875" />

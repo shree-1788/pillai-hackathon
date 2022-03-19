@@ -94,14 +94,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/lato"
-                    android:text="Forgot your password?" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
